@@ -1,15 +1,21 @@
 package tests;
 
-import models.User;
+import helpers.BaseHook;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.MainPage;
 
 
-public class SuccessfulLoginTest extends BaseTest {
+public class SuccessfulLoginTest extends BaseHook {
+    MainPage mainPage = new MainPage();
+    HomePage homePage = new HomePage();
+
 
     @Test
-    public void testLoginAndVerifyWelcomeMessage() {
-        User user = new User("testerovich.00@mail.ru", "Qwerty123-");
-
+    public void testLoginAndVerifyWelcomeMessage() throws InterruptedException {
+        mainPage.login();
+        Assert.assertEquals(homePage.titleLogin().getText(), expectTitle);
     }
 }
 
