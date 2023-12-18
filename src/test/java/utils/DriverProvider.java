@@ -2,13 +2,10 @@ package utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import models.User;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import pages.AccountPage;
 import pages.BasePage;
 import pages.HomePage;
@@ -16,7 +13,7 @@ import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class DriverProvider extends Hooks {
+public class DriverProvider {
     public User user = new User("testerovich.00@mail.ru", "Qwerty123-");
     public LoginPage loginPage = new LoginPage();
     public AccountPage accountPage = new AccountPage();

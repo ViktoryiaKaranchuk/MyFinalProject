@@ -1,6 +1,9 @@
 package tests;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.Assert;
 import utils.DriverProvider;
@@ -9,6 +12,20 @@ import static utils.Assert.checkSumBeforAndAfter;
 import static utils.Assert.checkTooltip;
 
 public class BaseTest extends DriverProvider {
+
+    @BeforeMethod
+    public void setUp() throws InterruptedException {
+        getCurrentDriver().get("https://www.mediaexpert.pl/");
+        driver.findElement(By.cssSelector("#onetrust-accept-btn-handler")).click();
+
+        waitForJQueryToBeActive();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        closeDriver();
+    }
+
     @Test
     public void emptyCart() {
         basePage.cart().click();

@@ -1,20 +1,22 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-// Selenium WebDriver
+    // Selenium WebDriver
     implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
     implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.14.1'
 
-// WebDriverManager
+    // WebDriverManager
     implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
+
     // TestNG
     testImplementation 'org.testng:testng:7.7.0'
 }
 
 test {
-    useTestNG( )
+    useTestNG()
 }
