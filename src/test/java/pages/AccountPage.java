@@ -1,6 +1,14 @@
 package pages;
 
 
-public class AccountPage {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
+import static utils.DriverProvider.driver;
+
+public class AccountPage {
+    By titleLogin = By.cssSelector("h3.headline");
+    public WebElement titleLogin() {
+        return  driver.findElement(titleLogin);
+    }
 }

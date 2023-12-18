@@ -1,4 +1,5 @@
 package pages;
 
-public class BasePage {
-}
+import utils.DriverProvider;
+
+public class BasePage { }
