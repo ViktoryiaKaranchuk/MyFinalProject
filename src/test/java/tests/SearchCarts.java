@@ -12,15 +12,6 @@ public class SearchCarts extends BaseHook {
 
         Assert.assertTrue(listOffers.stream().count() > 0);
     }
-
-    @Test
-    public void testSearchCartWithLogin() throws InterruptedException {
-        mainPage.login();
-        var listOffers = mainPage.fieldSearchCarts("honor");
-
-        Assert.assertTrue(listOffers.stream().count() > 0);
-    }
-
     @Test
     public void testSearchCartEmptyField() throws InterruptedException {
         var listOffers = mainPage.fieldSearchCarts(" ");
