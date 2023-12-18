@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.BaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-18T22:15:10" hostname="Sergejs-MBP-2" time="24.563">
+  <properties/>
+  <testcase name="addCart" classname="tests.BaseTest" time="24.563"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

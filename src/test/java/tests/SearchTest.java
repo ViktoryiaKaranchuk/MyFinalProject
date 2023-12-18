@@ -3,8 +3,9 @@ package tests;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import utils.Assert;
+import utils.DriverProvider;
 
-public class SearchTest extends BaseTest {
+public class SearchTest extends DriverProvider {
     @Test
     public void findCatFromSearchField() {
         homePage.fieldSearch().click();

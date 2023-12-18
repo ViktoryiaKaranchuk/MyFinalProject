@@ -72,25 +72,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/benedicttt/work/MyFinalProject",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/benedicttt/work/MyFinalProject&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="utils" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SearchTest">
-    <configuration name="EqualsTwoBins.testMatchingTwoPricesWithLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.BaseTest.addCart">
+    <configuration name="BaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -103,7 +106,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.EqualsTwoBins.testMatchingTwoPricesWithLogin&quot;" />
+            <option value="&quot;tests.BaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -113,28 +116,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MyFinalProject [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BaseTest.addCart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +129,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.SearchTest&quot;" />
+            <option value="&quot;tests.BaseTest.addCart&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CartTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.CartTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,7 +185,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SuccessfulLoginTest.testLoginAndVerifyWelcomeMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -193,7 +198,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.SuccessfulLoginTest.testLoginAndVerifyWelcomeMessage&quot;" />
+            <option value="&quot;tests.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SearchTest" />
+        <item itemvalue="Gradle.BaseTest.addCart" />
+        <item itemvalue="Gradle.BaseTest" />
+        <item itemvalue="Gradle.CartTest" />
+        <item itemvalue="Gradle.Tests in 'tests'" />
         <item itemvalue="Gradle.SuccessfulLoginTest" />
-        <item itemvalue="Gradle.MyFinalProject [clean]" />
-        <item itemvalue="Gradle.SuccessfulLoginTest.testLoginAndVerifyWelcomeMessage" />
-        <item itemvalue="Gradle.EqualsTwoBins.testMatchingTwoPricesWithLogin" />
       </list>
     </recent_temporary>
   </component>

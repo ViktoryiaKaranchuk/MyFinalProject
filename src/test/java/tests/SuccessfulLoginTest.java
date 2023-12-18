@@ -1,9 +1,10 @@
 package tests;
 
 import org.testng.annotations.Test;
+import utils.DriverProvider;
 import static utils.Assert.*;
 
-public class SuccessfulLoginTest extends BaseTest {
+public class SuccessfulLoginTest extends DriverProvider {
     @Test
     public void testLoginAndVerifyWelcomeMessage() {
         homePage.buttonArrow().click();
