@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.BaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-18T22:16:03" hostname="Sergejs-MBP-2" time="27.261">
+<testsuite name="tests.SearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-18T22:16:36" hostname="Sergejs-MBP-2" time="12.785">
   <properties/>
-  <testcase name="addCart" classname="tests.BaseTest" time="22.045"/>
-  <testcase name="emptyCart" classname="tests.BaseTest" time="0.231"/>
+  <testcase name="findCatFromSearchField" classname="tests.SearchTest" time="0.605"/>
+  <testcase name="findCatFromSearchFieldWithLogin" classname="tests.SearchTest" time="6.886"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Dec 19, 2023 12:16:26 AM org.openqa.selenium.os.ExternalProcess$Builder lambda$start$0
-WARNING: failed to copy the output of process 61875
+  <system-err><![CDATA[Dec 19, 2023 12:16:37 AM org.openqa.selenium.os.ExternalProcess$Builder lambda$start$0
+WARNING: failed to copy the output of process 61948
 java.io.IOException: Stream closed
 	at java.base/java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:176)
 	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:342)
@@ -13,8 +13,8 @@ java.io.IOException: Stream closed
 	at org.openqa.selenium.os.ExternalProcess$Builder.lambda$start$0(ExternalProcess.java:209)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-Dec 19, 2023 12:16:31 AM org.openqa.selenium.os.ExternalProcess$Builder lambda$start$0
-WARNING: failed to copy the output of process 61933
+Dec 19, 2023 12:16:50 AM org.openqa.selenium.os.ExternalProcess$Builder lambda$start$0
+WARNING: failed to copy the output of process 61964
 java.io.IOException: Stream closed
 	at java.base/java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:176)
 	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:342)
