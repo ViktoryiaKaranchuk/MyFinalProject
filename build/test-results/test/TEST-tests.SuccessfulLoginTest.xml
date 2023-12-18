@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.SuccessfulLoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-18T20:49:18" hostname="Sergejs-MBP-2" time="5.871">
-  <properties/>
-  <testcase name="testLoginAndVerifyWelcomeMessage" classname="tests.SuccessfulLoginTest" time="5.871"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

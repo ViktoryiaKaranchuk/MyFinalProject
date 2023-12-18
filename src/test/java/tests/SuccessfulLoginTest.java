@@ -1,12 +1,11 @@
 package tests;
 
 import org.testng.annotations.Test;
-import utils.AssertsFromData;
+import static utils.Assert.*;
 
 public class SuccessfulLoginTest extends BaseTest {
-
     @Test
-    public void testLoginAndVerifyWelcomeMessage() throws InterruptedException {
+    public void testLoginAndVerifyWelcomeMessage() {
         homePage.buttonArrow().click();
         homePage.buttonLogin().click();
 
@@ -14,8 +13,7 @@ public class SuccessfulLoginTest extends BaseTest {
         loginPage.passwordSelector().sendKeys(user.getPassword());
         loginPage.loginButtonSelector().click();
 
-
-        AssertsFromData.checkWelcomeText(accountPage.titleLogin().getText());
+        checkWelcomeText(accountPage.titleLogin().getText());
     }
 }
 
