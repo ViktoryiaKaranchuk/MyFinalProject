@@ -47,6 +47,7 @@ public class HomePage extends CommonData {
 
     public String getPriceFromAddedCart(String link) throws InterruptedException {
         DriverProvider.driver.get(link);
+        DriverProvider.driver.navigate().refresh(); //beacuse not need modal window will open
         Waits.waitForJQueryToBeActive();
 
         clickBtnAddCart();

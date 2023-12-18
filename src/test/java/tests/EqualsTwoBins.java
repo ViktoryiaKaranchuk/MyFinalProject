@@ -11,7 +11,7 @@ import utils.DriverProvider;
 public class EqualsTwoBins extends BaseHook {
 
     @Test
-    public void testLoginAndVerifyWelcomeMessage() throws InterruptedException {
+    public void testMatchingTwoPricesWithoutLogin() throws InterruptedException {
         homePage.checkEmptyCart();
 
         var totalPrice1 = homePage.getPriceFromAddedCart(linkIphone);
@@ -20,6 +20,19 @@ public class EqualsTwoBins extends BaseHook {
         Assert.assertEquals(totalPrice1, totalPrice1);
         Assert.assertNotEquals(totalPrice1, totalPrice2);
     }
+
+    @Test
+    public void testMatchingTwoPricesWithLogin() throws InterruptedException {
+        mainPage.login();
+        homePage.checkEmptyCart();
+
+        var totalPrice1 = homePage.getPriceFromAddedCart(linkIphone);
+        var totalPrice2 = homePage.getPriceFromAddedCart(linkPhone2);
+
+        Assert.assertEquals(totalPrice1, totalPrice1);
+        Assert.assertNotEquals(totalPrice1, totalPrice2);
+    }
+
 }
 
 
