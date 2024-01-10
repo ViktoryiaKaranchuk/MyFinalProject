@@ -14,7 +14,7 @@ import static utils.DriverProvider.getCurrentDriver;
 
 public class BaseTest {
     String closeMessageAboutCookiesButtonXpath = "//span[@class='ck_dsclr__btn_v2']";
-String x;
+String xy;
     @BeforeMethod
     public void setUp() {
         getCurrentDriver().get("https://www.ezebra.pl/");
